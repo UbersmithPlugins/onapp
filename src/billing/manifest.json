@@ -1,0 +1,65 @@
+{
+	"sdk_version": 1,
+	"name": "OnApp Billing",
+	"identifier": "com.ubersmith.plugins.onappbilling",
+	"namespace": "UbersmithPlugin\\Onapp\\Billing",
+	"description": "OnApp Billing",
+	"version": "1.0",
+	"modules": {
+		"onapp_billing_usage_datasource": {
+			"component": "datasources",
+			"label": "OnApp Billing Datasource",
+			"description": "Usage plans permitted to use this datasource."
+		}
+	},
+	"config_items": {
+		"hostname": {
+			"scope": ["module"],
+			"modules": ["onapp_billing_usage_datasource"],
+			"label": "OnApp Instance URL",
+			"type": "text",
+			"default": ""
+		},
+		"username": {
+			"scope": ["module"],
+			"modules": ["onapp_billing_usage_datasource"],
+			"label": "OnApp Username",
+			"type": "text",
+			"default": ""
+		},
+		"password": {
+			"scope": ["module"],
+			"modules": ["onapp_billing_usage_datasource"],
+			"label": "OnApp Password",
+			"type": "password",
+			"default": ""
+		},
+		"timeout": {
+			"scope": ["module"],
+			"modules": ["onapp_billing_usage_datasource"],
+			"label": "Request Timeout",
+			"type": "integer",
+			"description": "Timeout in seconds. 0 for indefinite amount of time. Setting timeout time to 0 can potentially result in daily invoice run being blocked due to unreachable OnApp host. Longer duration is preferred. Default is 300.",
+			"default": "300"
+		},
+		"billing_method": {
+			"scope": ["entity"],
+			"modules": ["onapp_billing_usage_datasource"],
+			"label": "OnApp Billing Method",
+			"type": "select",
+			"options": {
+				"bill_user": "User ID - VM resources only",
+				"bill_user_full": "User ID - All resources",
+				"bill_cdn": "CDN Resource ID",
+				"bill_vdcs": "vCloud Resource Pool ID"
+			}
+		},
+		"billing_method_id": {
+			"scope": ["entity"],
+			"modules": ["onapp_billing_usage_datasource"],
+			"label": "Billing Method ID",
+			"type": "text",
+			"default": ""
+		}
+	}
+}

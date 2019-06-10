@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5adeceebf4308e82aa3257875d94750a",
+    "packages": [
+        {
+            "name": "onapp/onapp-php-wrapper-external",
+            "version": "6.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OnApp/OnApp-PHP-Wrapper-External.git",
+                "reference": "9a852e6a57ddf72d38a0bdb4c11a95ce6fb1b939"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OnApp/OnApp-PHP-Wrapper-External/zipball/9a852e6a57ddf72d38a0bdb4c11a95ce6fb1b939",
+                "reference": "9a852e6a57ddf72d38a0bdb4c11a95ce6fb1b939",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^5.3.3 || ^7.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": {
+                "custom": "https://github.com/OnApp/OnApp-PHP-Wrapper-External/blob/5.5.0/LICENSE.md"
+            },
+            "description": "OnApp PHP Client Library",
+            "homepage": "https://github.com/OnApp/OnApp-PHP-Wrapper-External",
+            "keywords": [
+                "onapp",
+                "wrapper"
+            ],
+            "time": "2019-03-06T09:57:11+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "onapp/onapp-php-wrapper-external": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

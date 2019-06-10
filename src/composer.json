@@ -1,0 +1,5 @@
+{
+	"require": {
+		"onapp/onapp-php-wrapper-external": "6.0.0.x-dev"
+	}
+}
